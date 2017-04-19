@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form class="" action="index.html" method="post">
+            <h1 align="center">Selector de lecciones para practicar</h1>
+            <h2 align="center">El camino al exito....</h2>
+            <br><br><br>
+            <div class="" align="center">
+                <input type="button" name="" value="SUERTE......" onclick="calculo()"><br><br>
+                leccion n°<br>
+                <input type="text" name="" value="" id="leccion"><br><br>
+                Problema: <br>
+                <textarea name="name" rows="8" cols="80" id="problema"></textarea>
+            </div>
+            <script type="text/javascript">
+                function calculo(){
+                    var sorteo = parseInt(Math.random()*(18-1))+1;
+
+                    switch (sorteo) {
+                        case 1:
+                            document.getElementById('leccion').value = 11;
+                            document.getElementById("problema").value = "Confeccionar un programa que solicite que ingrese un valor entre 1 y 5. Luego mostrar en castellano el valor ingresado. Mostrar un mensaje de error en caso de haber ingresado un valor que no se encuentre en dicho rango.(con la funcion switch)"
+                            break;
+                        case 2:
+                            document.getElementById('leccion').value = 12;
+                            document.getElementById("problema").value = "Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado)."
+                            break;
+                        case 3:
+                            document.getElementById('leccion').value = 15;
+                            document.getElementById("problema").value = "Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla de multiplicar del mismo (los primeros 12 términos)Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36."
+                            break;
+                        case 4:
+                            document.getElementById('leccion').value = 17;
+                            document.getElementById("problema").value = "Confeccionar una función que reciba dos números y muestre en la página los valores comprendidos entre ellos de uno en uno. Cargar por teclado esos dos valores."
+                            break;
+                        case 5:
+                            document.getElementById('leccion').value = 18;
+                            document.getElementById("problema").value = "Confeccionar una función a la cual le envíe tres enteros y retorne el mayor de ellos."
+                            break;
+                        case 6:
+                            document.getElementById('leccion').value = 19;
+                            document.getElementById("problema").value = " Esta unidad no tiene ejercicios..."
+                            break;
+                        case 7:
+                            document.getElementById('leccion').value = 20;
+                            document.getElementById("problema").value = "Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. Para esto obtener el mes"
+                            break;
+                        case 8:
+                            document.getElementById('leccion').value = 21;
+                            document.getElementById("problema").value = "Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:El valor acumulado de todos los elementos del vector.El valor acumulado de los elementos del vector que sean mayores a 36.Cantidad de valores mayores a 50."
+                            break;
+                        case 9:
+                            document.getElementById('leccion').value = 22;
+                            document.getElementById("problema").value = "Confeccionar un programa que solicite el ingreso de un número y nos muestre dicho valor elevado a la tercera potencia"
+                            break;
+                        case 10:
+                            document.getElementById('leccion').value = 23;
+                            document.getElementById("problema").value = "Cargar un String por teclado e implementar las siguientes funciones:a) Imprimir la primera mitad de los caracteres de la cadena.b) Imprimir el último carácter.c) Imprimirlo en forma inversa.d) Imprimir cada carácter del String separado con un guión.e) Imprimir la cantidad de vocales almacenadas."
+                            break;
+                        case 11:
+                            document.getElementById('leccion').value = 24;
+                            document.getElementById("problema").value = "Crear un formulario con tres botones con las leyendas 1, 2 y 3. Mostrar un mensaje indicando qué botón se presionó."
+                            break;
+                        case 12:
+                            document.getElementById('leccion').value = 25;
+                            document.getElementById("problema").value = "Cargar un nombre y un apellido en sendos text. Al presionar un botón, concatenarlos y mostrarlos en un tercer text (Tener en cuenta que podemos modificar la propiedad value de un objeto TEXT cuando ocurre un evento)"
+                            break;
+                        case 13:
+                            document.getElementById('leccion').value = 26;
+                            document.getElementById("problema").value = "Disponer dos campos de texto tipo password. Cuando se presione un botón mostrar si las dos claves ingresadas son iguales o no (es muy común solicitar al operador el ingreso de dos veces de su clave para validar si las escribió correctamente, esto se hace cuando se crea una password para el ingreso a un sitio o para el cambio de una existente).Tener en cuenta que podemos emplear el operador == para ver si dos string son iguales."
+                            break;
+                        case 14:
+                            document.getElementById('leccion').value = 27;
+                            document.getElementById("problema").value = "Confeccionar una página que permita seleccionar una pizza y la cantidad de unidades. Luego al presionar un botón calcular el importe a pagar.Utilizar un objeto de la clase SELECT para la selección de la pizza, pudiendo ser:Queso: $ 4.Jamón y queso: $ 6.Especial: $ 10.A la cantidad de pizzas cargarla en un objeto de la clase TEXT y en otro objeto de la clase TEXT mostrar el importe total a abonar."
+                            break;
+                        case 15:
+                            document.getElementById('leccion').value = 28;
+                            document.getElementById("problema").value = "Confeccionar una página que muestre tres checkbox que permitan seleccionar los deportes que practica el usuario (Fútbol, Básket, Tenis) Mostrar al presionar un botón los deportes que a elegido."
+                            break;
+                        case 16:
+                            document.getElementById('leccion').value = 29;
+                            document.getElementById("problema").value = "Confeccionar una página que muestre dos objetos de la clase RADIO solicitando que seleccione si es mayor de 18 años o no. Al presionar un botón mostrar un alert indicando si puede ingresar al sitio o no."
+                            break;
+                        case 17:
+                            document.getElementById('leccion').value = 30;                                document.getElementById("problema").value = "Confeccionar una página de visitas a un sitio, solicitar ingresar el nombre de una persona, su mail y los comentarios (TEXTAREA). Mostrar luego llamando a la función alert los datos ingresados."
+                            break;
+
+                        default:alert("se salio de los parametros...");
+
+                    }
+                }
+
+
+
+
+            </script>
+
+        </form>
+
+    </body>
+</html>
