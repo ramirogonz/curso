@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript">
+            function abrir() {
+                var ventana = open();
+                ventana.document.write("esto esta escrito en la nueva ventana....<br>");
+                ventana.document.write("esta es la segunda linea...");
+            }
+            function parametros() {
+                var ventana =  open("","","width = 400, height = 250, menubar = yes");
+            }
+            function alerta() {
+                alert("esta es la ventana de alerta----")
+            }
+            function confirmar() {
+                var respuesta = confirm("precione alguno de los 2 botones.");
+                if (respuesta == true) {
+                    alert("preciono aceptar...")
+                }
+                else {
+                    alert("preciono cancelar...")
+                }
+            }
+            function cargarCadenas() {
+                var cad = prompt("cargue una cadena.....");
+                alert("usted ingreso "+cad);
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Este programa permite analizar las distintas responsabilidades del objeto windows</h3><br>
+        <br>
+        <form class="" action="index.html" method="post">
+            <input type="button" name="" value="open()" onclick="abrir()"><br>
+            <input type="button" name="" value="open con parametros" onclick="parametros()"><br>
+            <input type="button" name="" value="alert" onclick="alerta()"><br>
+            <input type="button" name="" value="confirm" onclick="confirmar()"><br>
+            <input type="button" name="" value="cargar cadenas" onclick="cargarCadenas()">
+
+        </form>
+
+    </body>
+</html>
