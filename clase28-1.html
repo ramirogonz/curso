@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript">
+            function calculo(){
+                var texto = " ";
+                var texto1 = " ";
+                var texto2 = " ";
+                if (document.getElementById("uno").checked) {
+                    texto = document.getElementById("uno").value;
+                }
+                if (document.getElementById("dos").checked) {
+                    texto1 = document.getElementById("dos").value;
+                }
+                if (document.getElementById("tres").checked) {
+                    texto2 = document.getElementById("tres").value;
+                }
+                alert("los deportes seleccionados son :"+texto+" "+texto1+" "+texto2);
+            }
+        </script>
+    </head>
+    <body>
+        <form class="" action="index.html" method="post">
+            <label for="">Que deporte practicas</label><br>
+            <input type="checkbox" name="" id="uno" value="Futbol">Futbol <br>
+            <input type="checkbox" name="" id="dos" value="Beisbol">Beisbol <br>
+            <input type="checkbox" name="" id="tres" value="Tenis">Tenis <br><br>
+            <input type="button" name="" value="procesar" onclick="calculo()">
+        </form>
+
+    </body>
+</html>
